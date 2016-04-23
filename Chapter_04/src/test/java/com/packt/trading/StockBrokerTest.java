@@ -88,7 +88,7 @@ public class StockBrokerTest {
 	@Test
 	public void argument_matcher() {
 		when(portfolio.getAvgPrice(isA(Stock.class))).thenReturn(
-				new BigDecimal("10.00"));
+				new BigDecimal("11.00"));
 		Stock blueChipStock = new Stock("FB", "FB Corp",
 				new BigDecimal(1000.00));
 		Stock otherStock = new Stock("XY", "XY Corp", new BigDecimal(5.00));
